@@ -100,14 +100,14 @@
 
   .side-text {
     position: absolute;
-    top: 52vh;
+    top: 47vh;
     font-size: 2rem;
-    background: #ffff0055;
+    background: #ff00ff55;
   }
 
   .main-image {
     width: 91%;
-    top: 15vh;
+    top: 10vh;
   }
 }
 
