@@ -601,13 +601,13 @@
   .main-image {
     position: absolute;
     width: 100%;
-    top: 20vh;
+    top: 15vh;
   }
 
   .side-text {
     position: absolute;
     width: 100%;
-    top: 55vh;
+    top: 52vh;
     background: #00ff0055;
   }
 }
