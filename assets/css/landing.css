@@ -99,12 +99,15 @@
   }
 
   .side-text {
-    /* margin-top: 10vh; */
+    position: absolute;
+    top: 52vh;
     font-size: 2rem;
+    background: #ffff0055;
   }
 
   .main-image {
     width: 91%;
+    top: 15vh;
   }
 }
 
