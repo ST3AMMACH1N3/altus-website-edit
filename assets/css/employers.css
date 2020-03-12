@@ -641,6 +641,10 @@
 }
 
 @media screen and (max-width: 510px) {
+  .landing-section .section-footer .container {
+    padding-bottom: 3vh;
+  }
+
   .city-column {
     position: relative;
     width: 50%;
