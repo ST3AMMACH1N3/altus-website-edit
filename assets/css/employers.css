@@ -593,6 +593,22 @@
   .cloud-third {
     top: 52.5vh;
   }
+
+  .main-view {
+    display: block;
+  }
+
+  .main-image {
+    position: absolute;
+    width: 100%;
+    top: 25vh;
+  }
+
+  .side-text {
+    position: absolute;
+    width: 100%;
+    top: 50vh;
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-height: 1080px) {
