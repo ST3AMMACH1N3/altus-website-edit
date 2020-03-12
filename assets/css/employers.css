@@ -658,10 +658,6 @@
 }
 
 @media screen and (max-width: 510px) {
-  .landing-section .section-footer .container {
-    padding-bottom: 3vh;
-  }
-
   .city-column {
     position: relative;
     width: 50%;
@@ -714,12 +710,6 @@
 
   .side-text {
     margin-top: 0px;
-  }
-}
-
-@media screen and (max-width: 510px) and (min-height: 800px) {
-  .side-text {
-    /* margin-top: 10%; */
   }
 }
 

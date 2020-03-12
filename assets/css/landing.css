@@ -110,6 +110,10 @@
     width: 91%;
     top: 15vh;
   }
+
+  .section-footer .container {
+    padding-bottom: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
