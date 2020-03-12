@@ -702,7 +702,7 @@
 
 @media screen and (max-width: 510px) and (min-height: 800px) {
   .side-text {
-    margin-top: 10%;
+    /* margin-top: 10%; */
   }
 }
 
