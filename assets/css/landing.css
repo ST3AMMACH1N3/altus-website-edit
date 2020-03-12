@@ -106,10 +106,6 @@
   .main-image {
     width: 91%;
   }
-
-  .section-footer-heading img {
-    /* height: 4rem; */
-  }
 }
 
 @media screen and (max-width: 320px) {

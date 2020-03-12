@@ -553,7 +553,8 @@ body {
   }
 
   .section-footer .container {
-    padding-bottom: 3vh;
+    padding-top: 0px;
+    padding-bottom: 5vh;
   }
 
   .section-footer-heading {
@@ -700,6 +701,11 @@ body {
     top: 6rem;
     right: -9rem;
     transform: rotate(-45deg);
+  }
+
+  .section-footer {
+    background-image: url("../images/shared/White-Bar-Mobile.svg");
+    background-position: bottom;
   }
 }
 
