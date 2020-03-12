@@ -54,3 +54,16 @@ function scrollCarouselLeft(carousel) {
       .animate({ opacity: 1 }, 500);
   }, 5000);
 }
+
+$(window).on("load", () => {
+  if ($(window).scrollTop() === 0) {
+    console.log("At top");
+    $(".section-footer").addClass("fixed");
+  } else {
+    console.log("Not at top");
+  }
+});
+
+$(window).on("scroll", e => {
+  $(".fixed").removeClass("fixed");
+});

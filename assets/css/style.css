@@ -707,6 +707,11 @@ body {
     background-image: url("../images/shared/White-Bar-Mobile.svg");
     background-position: bottom;
   }
+
+  .fixed {
+    position: fixed;
+    bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 414px) {
