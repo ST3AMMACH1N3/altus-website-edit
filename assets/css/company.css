@@ -429,13 +429,11 @@
   }
 
   .side-text {
-    /* margin: 0px auto; */
     width: 55%;
   }
 
   .side-text-paragraph {
     width: 83.5%;
-    /* font-size: 2rem; */
   }
 
   .side-text h1 p {
@@ -465,24 +463,32 @@
 
 @media screen and (max-width: 510px) {
   .leadership-heading {
-    /* font-size: 2rem; */
     letter-spacing: 0.85rem;
   }
 
-  .side-text {
-    width: 80%;
+  .main-image {
+    position: absolute;
+    top: 10vh;
   }
-}
 
-@media screen and (max-width: 414px) {
-  .side-text h1 {
-    width: 75%;
+  .side-text {
+    position: absolute;
+    top: 55vh;
+    width: 100%;
   }
 
   .side-text-paragraph {
     width: 80%;
+    margin: 0px auto;
   }
 
+  .side-text h1 {
+    width: 80%;
+    margin: 0px auto 2vh;
+  }
+}
+
+@media screen and (max-width: 414px) {
   .location-info {
     margin-left: -2rem;
     margin-right: -2rem;
@@ -494,14 +500,21 @@
   }
 }
 
-@media screen and (max-width: 375px) {
-  .side-text h1 {
-    width: 90%;
+@media screen and (max-width: 414px) and (min-height: 660px) {
+  .side-text {
+    top: 72vh;
   }
+}
 
-  .side-text .side-text-paragraph {
+@media screen and (max-width: 414px) and (min-height: 800px) {
+  .side-text {
+    top: 65vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .side-text-paragraph {
     font-size: 2.5rem;
-    width: 95%;
     line-height: 3.5rem;
   }
 
@@ -513,19 +526,5 @@
 @media screen and (max-width: 360px) {
   .mission-statement {
     padding: 2rem 2rem;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .side-text h1 p {
-    width: 88%;
-    margin-left: 5%;
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-  }
-
-  .side-text .side-text-paragraph {
-    font-size: 2rem;
-    line-height: 3rem;
   }
 }
