@@ -167,8 +167,10 @@
 @media screen and (max-width: 510px) {
   .blocks {
     bottom: -5vh;
-    right: 25%;
-    width: 225px;
+    right: 25vw;
+    height: 69vh;
+    width: auto;
+    /* width: 225px; */
   }
 
   .cloud-first {
@@ -195,15 +197,15 @@
     margin-top: 5vh;
   }
 
-  .blocks {
+  /* .blocks {
     width: 210px;
-  }
+  } */
 }
 
 @media screen and (max-width: 375px) and (max-height: 712px) {
-  .blocks {
+  /* .blocks {
     width: 165px;
-  }
+  } */
 }
 
 @media screen and (max-width: 350px) {
