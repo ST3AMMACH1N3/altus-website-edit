@@ -527,4 +527,11 @@
   .mission-statement {
     padding: 2rem 2rem;
   }
+
+  .side-text {
+    top: 60vh;
+  }
+}
+
+@media screen and (max-width: ) {
 }
