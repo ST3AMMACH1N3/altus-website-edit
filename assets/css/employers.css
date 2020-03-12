@@ -608,6 +608,7 @@
     position: absolute;
     width: 100%;
     top: 50vh;
+    background: #ff000055;
   }
 }
 
