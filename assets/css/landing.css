@@ -102,12 +102,13 @@
     position: absolute;
     top: 47vh;
     font-size: 2rem;
-    background: #ff00ff55;
+    background: #ff000055;
   }
 
   .main-image {
+    position: absolute;
     width: 91%;
-    top: 10vh;
+    top: 15vh;
   }
 }
 
