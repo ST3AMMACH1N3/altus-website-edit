@@ -55,15 +55,23 @@ function scrollCarouselLeft(carousel) {
   }, 5000);
 }
 
+const sectionFooterPos = $(".section-footer").offset().top;
+
 $(window).on("load", () => {
   if ($(window).scrollTop() === 0) {
     $(".section-footer").addClass("fixed");
-  } else {
   }
 });
 
 $(window).on("scroll", e => {
-  $(".fixed").removeClass("fixed");
+  // console.log($(window).scrollTop() + $(window).height());
+  // console.log(sectionFooterPos + $(".section-footer").height());
+  if (
+    $(window).scrollTop() + $(window).height() >=
+    sectionFooterPos + $(".section-footer").height()
+  ) {
+    $(".fixed").removeClass("fixed");
+  }
 });
 
 $(".gradient-btn").on("click", () => {
