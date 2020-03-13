@@ -555,10 +555,6 @@ body {
     z-index: 2;
   }
 
-  .navigation-mobile {
-    background: #0000ffaa;
-  }
-
   .altus-logo-small {
     height: 30px;
   }
@@ -862,19 +858,5 @@ body {
 @media screen and (device-width: 414px) and (device-height: 896px) {
   .landing-section {
     min-height: calc(100vh - 110px);
-  }
-}
-
-@media screen and (device-width: 1024px) and (device-height: 1366px) {
-  .navigation-mobile {
-    background: #00ff00aa;
-  }
-
-  .landing-section {
-    min-height: calc(100vh - 110px);
-  }
-
-  .section-footer {
-    padding-bottom: 2rem;
   }
 }
