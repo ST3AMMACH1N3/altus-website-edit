@@ -332,7 +332,7 @@ body {
   background: #fff;
   --modal-padding: 15px;
   padding: var(--modal-padding);
-  z-index: 10;
+  z-index: 2;
 }
 
 .modal hr {
@@ -552,7 +552,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0px 5vw;
-    z-index: 2;
+    z-index: 5;
   }
 
   .altus-logo-small {
@@ -829,6 +829,31 @@ body {
   .fixed {
     position: fixed;
     bottom: 0px;
+  }
+
+  .modal {
+    top: 10vh;
+    right: 0px;
+    width: 100%;
+    transform: none;
+  }
+
+  .modal,
+  .information-form input,
+  .information-form select {
+    font-size: 1.5rem;
+  }
+
+  .information-form {
+    grid-template-areas:
+      "company company company company company company"
+      "city city city city city city"
+      "state state state state state state"
+      "fname fname fname fname fname fname"
+      "lname lname lname lname lname lname"
+      "email email email email email email"
+      "title title title title title title"
+      "..... ..... submit submit ..... .....";
   }
 }
 
