@@ -102,7 +102,7 @@
     position: absolute;
     top: 47vh;
     font-size: 2rem;
-    background: #00ff00;
+    background: #ff0000;
   }
 
   .main-image {
@@ -129,5 +129,11 @@
   .heading-space {
     font-size: 3.2rem;
     letter-spacing: 0.85rem;
+  }
+}
+
+@media screen and (device-width: 414px) and (device-height: 896px) {
+  .landing-section {
+    min-height: calc(100vh - 44px);
   }
 }
