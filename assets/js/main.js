@@ -55,7 +55,7 @@ function scrollCarouselLeft(carousel) {
   }, 5000);
 }
 
-$(".gradient-btn").on("click touchstart", () => {
+$(".gradient-btn").on("click", () => {
   $(".modal").removeClass("hidden");
   // $(".navigation-mobile").css("background-color", "#f00");
 });
