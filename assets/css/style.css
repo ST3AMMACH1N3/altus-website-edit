@@ -335,17 +335,6 @@ body {
   z-index: 2;
 }
 
-/* .modal::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  background: #000000aa;
-  z-index: -5;
-} */
-
 .modal hr {
   position: relative;
   left: calc(var(--modal-padding) * -1);
@@ -849,17 +838,6 @@ body {
     width: 100%;
     transform: none;
   }
-
-  /* .modal::before {
-    content: "";
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    background: #000000aa;
-    /* z-index: -5; */
-  } */
 
   .modal,
   .information-form input,
