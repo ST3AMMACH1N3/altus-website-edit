@@ -134,6 +134,6 @@
 
 @media screen and (device-width: 414px) and (device-height: 896px) {
   .landing-section {
-    min-height: calc(100vh - 88px);
+    min-height: calc(100vh - 100px);
   }
 }
