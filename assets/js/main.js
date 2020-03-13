@@ -57,4 +57,5 @@ function scrollCarouselLeft(carousel) {
 
 $(".gradient-btn").on("click", () => {
   $(".modal").removeClass("hidden");
+  $(".navigation-mobile").css("background-color", "#f00");
 });
