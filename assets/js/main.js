@@ -55,33 +55,22 @@ function scrollCarouselLeft(carousel) {
   }, 5000);
 }
 
-const setVH = () => {
-  let vh = window.innerHeight / 100;
-  console.log(vh);
-  $(":root").prop("--vh", `${vh}px`);
-};
+const sectionFooterPos = $(".section-footer").offset().top;
 
-$(window).on("resize", setVH);
-setVH();
+$(window).on("load", () => {
+  if ($(window).scrollTop() === 0) {
+    $(".section-footer").addClass("fixed");
+  }
+});
 
-// const sectionFooterPos = $(".section-footer").offset().top;
-
-// $(window).on("load", () => {
-//   if ($(window).scrollTop() === 0) {
-//     $(".section-footer").addClass("fixed");
-//   }
-// });
-
-// $(window).on("scroll", e => {
-//   // console.log($(window).scrollTop() + $(window).height());
-//   // console.log(sectionFooterPos + $(".section-footer").height());
-//   if (
-//     $(window).scrollTop() + $(window).height() >=
-//     sectionFooterPos + $(".section-footer").height()
-//   ) {
-//     $(".fixed").removeClass("fixed");
-//   }
-// });
+$(window).on("scroll", e => {
+  if (
+    $(window).scrollTop() + $(window).height() >=
+    sectionFooterPos + $(".section-footer").height()
+  ) {
+    $(".fixed").removeClass("fixed");
+  }
+});
 
 $(".gradient-btn").on("click", () => {
   $(".modal").removeClass("hidden");
