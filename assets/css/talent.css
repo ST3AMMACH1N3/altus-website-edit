@@ -238,7 +238,7 @@
   }
 
   100% {
-    opacity: 0.61;
+    opacity: 0.32;
     transform: scaleX(-1) translateY(0px);
   }
 }
@@ -250,7 +250,7 @@
   }
 
   100% {
-    opacity: 0.32;
+    opacity: 0.61;
     transform: translateY(0px);
   }
 }
