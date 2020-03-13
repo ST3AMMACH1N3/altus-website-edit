@@ -55,11 +55,22 @@ function scrollCarouselLeft(carousel) {
   }, 5000);
 }
 
-$(".gradient-btn").on("click", () => {
-  $(".modal").removeClass("hidden");
-  // $(".navigation-mobile").css("background-color", "#f00");
-});
-
 $(".navigation-mobile a").on("click", () => {
   $(".navigation-mobile").toggleClass("open closed");
+});
+
+$(".gradient-btn").on("click", e => {
+  e.stopPropagation();
+  $(".modal").removeClass("hidden");
+});
+
+$(".modal").on("click", e => {
+  e.stopPropagation();
+});
+
+$(document).on("click", e => {
+  if ($(".modal").hasClass("hidden")) {
+    return;
+  }
+  $(".modal").addClass("hidden");
 });
