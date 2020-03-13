@@ -59,3 +59,7 @@ $(".gradient-btn").on("click touchstart", () => {
   $(".modal").removeClass("hidden");
   // $(".navigation-mobile").css("background-color", "#f00");
 });
+
+$(".navigation-mobile a").on("click", () => {
+  $(".navigation-mobile").toggleClass("open closed");
+});
