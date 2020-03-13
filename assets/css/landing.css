@@ -102,7 +102,7 @@
     position: absolute;
     top: 47vh;
     font-size: 2rem;
-    background: #0000ffaa;
+    background: #ffff00aa;
   }
 
   .main-image {
@@ -129,17 +129,5 @@
   .heading-space {
     font-size: 3.2rem;
     letter-spacing: 0.85rem;
-  }
-}
-
-@media screen and (orientation: landscape) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
   }
 }
