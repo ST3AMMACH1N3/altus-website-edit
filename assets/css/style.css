@@ -853,3 +853,9 @@ body {
     height: 3.5rem;
   }
 }
+
+@media screen and (device-width: 414px) and (device-height: 896px) {
+  .landing-section {
+    min-height: calc(100vh - 110px);
+  }
+}
