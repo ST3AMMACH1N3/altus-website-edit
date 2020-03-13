@@ -55,7 +55,16 @@ function scrollCarouselLeft(carousel) {
   }, 5000);
 }
 
-const sectionFooterPos = $(".section-footer").offset().top;
+const setVH = () => {
+  let vh = window.innerHeight / 100;
+  console.log(vh);
+  $(":root").prop("--vh", `${vh}px`);
+};
+
+$(window).on("resize", setVH);
+setVH();
+
+// const sectionFooterPos = $(".section-footer").offset().top;
 
 // $(window).on("load", () => {
 //   if ($(window).scrollTop() === 0) {
