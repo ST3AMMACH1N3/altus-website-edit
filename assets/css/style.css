@@ -223,6 +223,7 @@ body {
 }
 
 .gradient-btn {
+  position: relative;
   display: inline-block;
   font-size: 1.5rem;
   background-image: linear-gradient(135deg, #0ae, #0ea);
@@ -230,6 +231,7 @@ body {
   color: #fff;
   padding: 0.25em 2em;
   border-radius: 50%/200%;
+  z-index: 5;
   cursor: pointer;
 }
 
@@ -487,7 +489,7 @@ body {
   background-size: cover;
   flex-direction: column;
   justify-content: flex-end;
-  z-index: 1;
+  z-index: 0;
 }
 
 .section-footer-heading {

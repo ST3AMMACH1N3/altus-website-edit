@@ -64,10 +64,6 @@ $(".gradient-btn").on("click", e => {
   $(".modal").removeClass("hidden");
 });
 
-$(".modal").on("click", e => {
-  e.stopPropagation();
-});
-
 $(document).on("click", e => {
   if ($(".modal").hasClass("hidden")) {
     return;
