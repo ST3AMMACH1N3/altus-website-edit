@@ -16,7 +16,9 @@ if ($(".animation-parent").length) {
             $(elem).removeClass("not-visible");
             $(elem).addClass("visible");
             if ($(elem).hasClass("carousel")) {
-              scrollCarouselLeft(elem);
+              setTimeout(() => {
+                scrollCarouselLeft(elem);
+              }, 5000);
             }
           });
       }
@@ -28,31 +30,33 @@ if ($(".animation-parent").length) {
   });
 }
 
-function scrollCarouselLeft(carousel) {
-  setTimeout(() => {
-    let scrollPos = $(carousel).width();
-    $(carousel).animate({ scrollLeft: scrollPos }, 500, () => {
-      let removed = $(carousel)
-        .children(".carousel-page")
-        .first()
-        .remove();
-      $(carousel)
-        .first()
-        .scrollLeft(0);
-      $(carousel).append(removed);
-      scrollCarouselLeft(carousel);
-    });
+let animationTime;
 
-    $(carousel)
+function scrollCarouselLeft(carousel) {
+  let scrollPos = $(carousel).width();
+  $(carousel).animate({ scrollLeft: scrollPos }, 500, () => {
+    let removed = $(carousel)
       .children(".carousel-page")
       .first()
-      .animate({ opacity: 0 }, 500);
+      .detach();
     $(carousel)
-      .children(".carousel-page")
       .first()
-      .next()
-      .animate({ opacity: 1 }, 500);
-  }, 5000);
+      .scrollLeft(0);
+    $(carousel).append(removed);
+    animationTime = setTimeout(() => {
+      scrollCarouselLeft(carousel);
+    }, 5000);
+  });
+
+  $(carousel)
+    .children(".carousel-page")
+    .first()
+    .animate({ opacity: 0 }, 500);
+  $(carousel)
+    .children(".carousel-page")
+    .first()
+    .next()
+    .animate({ opacity: 1 }, 500);
 }
 
 $(".navigation-mobile a").on("click", () => {
