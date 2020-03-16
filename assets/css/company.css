@@ -64,7 +64,6 @@
 
 .location-name {
   letter-spacing: 0.3rem;
-  color: #000;
 }
 
 .location-info {
@@ -79,10 +78,24 @@
 .section-footer .location-image {
   height: auto;
   width: 30%;
+  opacity: 0;
+  animation: pop-in 0.4s cubic-bezier(0.39, 0.575, 0.565, 1.4) both 0.4s;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0.25);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .section-footer a {
-  color: #ccc;
+  color: #b3b3b3;
 }
 
 .section-footer-middle {
@@ -487,6 +500,11 @@
   .side-text h1 {
     width: 70%;
     margin: 0px auto 2vh;
+  }
+
+  .section-footer .location-image {
+    animation: none;
+    opacity: 1;
   }
 }
 
