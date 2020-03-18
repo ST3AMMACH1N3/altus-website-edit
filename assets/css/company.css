@@ -29,6 +29,7 @@
   margin-top: 5vh;
   justify-content: space-between;
   align-items: unset;
+  /* min-height: 75vmin; */
 }
 
 .main-image {
@@ -328,6 +329,12 @@
 
   100% {
     opacity: 0.25;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 725px) {
+  .main-view {
+    min-height: 80vmin;
   }
 }
 
