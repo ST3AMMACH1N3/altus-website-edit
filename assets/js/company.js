@@ -1,11 +1,8 @@
 $(".leadership-carousel").hover(
   () => {
-    clearTimeout(animationTime);
+    paused = true;
   },
   e => {
-    const { currentTarget } = e;
-    setTimeout(() => {
-      scrollCarouselLeft(currentTarget);
-    }, 2000);
+    paused = null;
   }
 );

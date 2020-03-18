@@ -1,3 +1,5 @@
+let paused, animationTime;
+
 $(".menu-btn").on("click", () => {
   $(".navigation-mobile").toggleClass("open closed");
 });
@@ -30,9 +32,11 @@ if ($(".animation-parent").length) {
   });
 }
 
-let animationTime;
-
 function scrollCarouselLeft(carousel) {
+  animationTime = setTimeout(() => {
+    scrollCarouselLeft(carousel);
+  }, 5000);
+  if (paused) return;
   let scrollPos = $(carousel).width();
   $(carousel).animate({ scrollLeft: scrollPos }, 500, () => {
     let removed = $(carousel)
@@ -43,9 +47,6 @@ function scrollCarouselLeft(carousel) {
       .first()
       .scrollLeft(0);
     $(carousel).append(removed);
-    animationTime = setTimeout(() => {
-      scrollCarouselLeft(carousel);
-    }, 5000);
   });
 
   $(carousel)

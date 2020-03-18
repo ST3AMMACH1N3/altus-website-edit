@@ -255,7 +255,7 @@
     <div class="modal hidden">
       <h2>REQUEST INFORMATION</h2>
       <hr />
-      <form class="information-form" action="" method="POST">
+      <form id="sign-up-form" class="information-form" action="" method="POST">
         <div class="company-input-wrapper">
           <label for="company">COMPANY</label>
           <input id="company" name="company" type="text" required />
@@ -330,7 +330,7 @@
         </div>
         <div class="email-input-wrapper">
           <label for="email">EMAIL</label>
-          <input it="email" name="email" type="email" required />
+          <input id="email" name="email" type="email" required />
         </div>
         <div class="title-input-wrapper">
           <label for="title">TITLE</label>
@@ -345,5 +345,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcpB-IUAAAAAEpymRWuTGs_DO7PIsegE-Bv-u2k"></script>
+    <script src="./assets/js/form.js"></script>
   </body>
 </html>

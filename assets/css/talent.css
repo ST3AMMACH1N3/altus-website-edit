@@ -33,6 +33,7 @@
   position: absolute;
   bottom: -10vh;
   right: 15%;
+  height: 80vh;
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
     both 0.4s;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.4s;
@@ -114,6 +115,7 @@
   .blocks {
     bottom: -5vh;
     right: 35%;
+    /* width: 325px; */
   }
 
   .transition-arrow {
@@ -128,10 +130,6 @@
     font-size: 2rem;
   }
 
-  .blocks {
-    width: 325px;
-  }
-
   .side-text {
     margin-top: 0px;
   }
@@ -140,7 +138,7 @@
 @media screen and (max-width: 1024px) and (max-height: 1080px) {
   .blocks {
     bottom: -10vh;
-    width: 300px;
+    /* width: 300px; */
   }
 
   .cloud-third {
