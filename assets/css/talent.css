@@ -109,6 +109,8 @@
 
 @media screen and (max-width: 1024px) {
   .main-view {
+    justify-content: flex-end;
+    min-height: 80vh;
     margin-top: 10vh;
   }
 

@@ -442,10 +442,6 @@
     margin-top: 0px;
   }
 
-  .side-text {
-    margin-top: -40%;
-  }
-
   .side-text h1 {
     margin: 0px 0px 0.75em;
   }
@@ -606,15 +602,12 @@
   .side-text {
     position: absolute;
     width: 100%;
-    top: 52vh;
+    top: 45vh;
+    margin-top: -10%;
   }
 }
 
 @media screen and (max-width: 1024px) and (min-height: 1080px) {
-  .side-text {
-    margin-top: -20%;
-  }
-
   .side-text p {
     font-size: 6rem;
   }
@@ -643,16 +636,9 @@
   .map-pin {
     transform: translate(25%, -40%);
   }
-
-  .side-text {
-    margin-top: -20%;
-  }
 }
 
 @media screen and (max-width: 1024px) and (max-height: 959px) {
-  .side-text {
-    margin-top: -40%;
-  }
 }
 
 @media screen and (max-width: 510px) {
