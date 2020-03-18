@@ -1,5 +1,5 @@
 .side-text {
-  width: 30%;
+  width: 35%;
   z-index: 1;
 }
 
@@ -347,7 +347,7 @@
     justify-content: space-around;
     /* padding-top: 8vh; */
     margin: 0px;
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .main-image {
