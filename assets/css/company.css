@@ -395,6 +395,8 @@
     background: #fff;
     bottom: -1px;
     width: calc(100% + 2px);
+    max-height: unset;
+    height: unset;
   }
 
   .section-footer .container {
