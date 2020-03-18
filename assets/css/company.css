@@ -17,11 +17,12 @@
 
 .side-text h1 {
   margin-top: 0.6rem;
+  margin-bottom: 3vh;
 }
 
 .side-text-paragraph {
   font-size: 1.3rem;
-  width: 61%;
+  width: 70%;
 }
 
 .main-view {
@@ -343,14 +344,16 @@
   }
 
   .main-view {
-    flex-direction: column-reverse;
-    justify-content: space-around;
+    /* display: block; */
+    flex-direction: unset;
+    justify-content: unset;
     /* padding-top: 8vh; */
     margin: 0px;
     min-height: 100vh;
   }
 
   .main-image {
+    position: absolute;
     width: 100%;
   }
 
@@ -361,7 +364,7 @@
   .side-text {
     text-align: left;
     width: 47%;
-    margin: -15vh auto 0px;
+    margin: 40vmin auto 0px;
   }
 
   .side-text h1 {
@@ -476,11 +479,17 @@
 
 @media screen and (max-width: 1024px) and (max-height: 960px) {
   .side-text {
-    margin: -20vh auto 0px;
+    /* margin: 0px auto; */
   }
 
   .side-text-paragraph {
     font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-height: 1025px) {
+  .side-text {
+    margin-top: 70vmin;
   }
 }
 
@@ -522,6 +531,12 @@
   }
 }
 
+@media screen and (max-width: 510px) and (min-height: 700px) {
+  .side-text {
+    margin-top: 70vmin;
+  }
+}
+
 @media screen and (max-width: 510px) {
   .leadership-heading {
     letter-spacing: 0.85rem;
@@ -534,7 +549,7 @@
 
   .side-text {
     position: absolute;
-    top: 55vh;
+    /* top: 55vh; */
     width: 100%;
   }
 
@@ -568,13 +583,13 @@
 
 @media screen and (max-width: 414px) and (min-height: 660px) {
   .side-text {
-    top: 72vh;
+    /* top: 72vh; */
   }
 }
 
 @media screen and (max-width: 414px) and (min-height: 800px) {
   .side-text {
-    top: 65vh;
+    /* top: 65vh; */
   }
 }
 
@@ -595,13 +610,13 @@
   }
 
   .side-text {
-    top: 65vh;
+    /* top: 65vh; */
   }
 }
 
 @media screen and (max-width: 325px) {
   .side-text {
-    top: 60vh;
+    /* top: 60vh; */
   }
 
   .side-text h1 {
