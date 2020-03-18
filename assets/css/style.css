@@ -2,6 +2,8 @@
   font-family: "FuturaPT";
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
   src: url("../fonts/FuturaPT/FuturaPTBook.otf") format("opentype");
 }
 
@@ -9,6 +11,8 @@
   font-family: "FuturaPT";
   font-weight: normal;
   font-style: oblique;
+  font-display: swap;
+  unicode-range: U+000-5FF;
   src: url("../fonts/FuturaPT/FuturaPTBookOblique.otf") format("opentype");
 }
 
@@ -16,6 +20,8 @@
   font-family: "FuturaPT";
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
   src: url("../fonts/FuturaPT/FuturaPTDemi.otf") format("opentype");
 }
 
@@ -23,6 +29,8 @@
   font-family: "FuturaPT";
   font-weight: bold;
   font-style: oblique;
+  font-display: swap;
+  unicode-range: U+000-5FF;
   src: url("../fonts/FuturaPT/FuturaPTDemiOblique.otf") format("opentype");
 }
 
