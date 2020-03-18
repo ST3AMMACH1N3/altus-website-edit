@@ -487,10 +487,6 @@
 }
 
 @media screen and (max-width: 1024px) and (max-height: 960px) {
-  .side-text {
-    /* margin: 0px auto; */
-  }
-
   .side-text-paragraph {
     font-size: 2.25rem;
   }
@@ -590,18 +586,6 @@
   }
 }
 
-@media screen and (max-width: 414px) and (min-height: 660px) {
-  .side-text {
-    /* top: 72vh; */
-  }
-}
-
-@media screen and (max-width: 414px) and (min-height: 800px) {
-  .side-text {
-    /* top: 65vh; */
-  }
-}
-
 @media screen and (max-width: 375px) {
   .side-text-paragraph {
     font-size: 2.5rem;
@@ -617,17 +601,9 @@
   .mission-statement {
     padding: 2rem 2rem;
   }
-
-  .side-text {
-    /* top: 65vh; */
-  }
 }
 
 @media screen and (max-width: 325px) {
-  .side-text {
-    /* top: 60vh; */
-  }
-
   .side-text h1 {
     width: 80%;
   }
