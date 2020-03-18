@@ -632,7 +632,7 @@ body {
     background: #fff;
     padding: 0px 1em;
     transform-origin: top center;
-    max-height: 60vh;
+    max-height: calc((4rem + 6vh) * 4);
     transition: 0.5s max-height;
   }
 
@@ -641,7 +641,7 @@ body {
   }
 
   .open .menu {
-    max-height: 60vh;
+    max-height: calc((4rem + 6vh) * 4);
   }
 
   .menu a {
