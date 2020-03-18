@@ -113,9 +113,8 @@
   }
 
   .blocks {
-    bottom: -5vh;
+    height: 65vh;
     right: 35%;
-    /* width: 325px; */
   }
 
   .transition-arrow {
@@ -137,8 +136,6 @@
 
 @media screen and (max-width: 1024px) and (max-height: 1080px) {
   .blocks {
-    bottom: -10vh;
-    /* width: 300px; */
   }
 
   .cloud-third {
@@ -148,7 +145,6 @@
 
 @media screen and (max-width: 1024px) and (max-height: 960px) {
   .blocks {
-    bottom: -16vh;
   }
 }
 
@@ -164,11 +160,9 @@
 
 @media screen and (max-width: 510px) {
   .blocks {
-    bottom: -5vh;
     right: 25vw;
     height: 65vh;
     width: auto;
-    /* width: 225px; */
   }
 
   .cloud-first {
@@ -198,19 +192,16 @@
   }
 
   .blocks {
-    bottom: -10vh;
   }
 }
 
 @media screen and (device-width: 414px) and (device-height: 896px) {
   .blocks {
-    bottom: -10vh;
   }
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
   .blocks {
-    bottom: -20vh;
   }
 }
 

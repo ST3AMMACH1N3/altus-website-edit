@@ -347,7 +347,7 @@
     justify-content: space-around;
     /* padding-top: 8vh; */
     margin: 0px;
-    /* height: 100vh; */
+    min-height: 100vh;
   }
 
   .main-image {
